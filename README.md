@@ -9,15 +9,13 @@
 
     // Shorten an URL.
     $strLongUrl = 'http://www.github.com';
-    if ($strShortUrl = GooglPHP::shortURL($strLongUrl)) {
-        echo $strLongUrl . ' shortened: ' . $strShortUrl . '<br>';
-    }
+    $strShortUrl = GooglPHP::shortURL($strLongUrl);
+    echo $strLongUrl . ' shortened: ' . $strShortUrl . '<br>';
 
     // Expand an URL.
     $strShortUrl = 'http://goo.gl/ddom'; // www.linux.com
-    if ($strLongUrl = GooglPHP::expandURL($strShortUrl)) {
-        echo $strShortUrl . ' expanded: ' . $strLongUrl . '<br>';
-    }
+    $strLongUrl = GooglPHP::expandURL($strShortUrl);
+    echo $strShortUrl . ' expanded: ' . $strLongUrl . '<br>';
     ?>
 
 ## Bugs?
